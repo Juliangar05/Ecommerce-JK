@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Login</title>
+	<link rel="stylesheet" href="login.css">
+	<script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+		<div class="btn-menu">
+			<label for="btn-menu">☰</label>
+		</div>
+			<div class="logo">
+				<h1><img src="logopagina.png" class="imagenlogo"></h1>
+			</div>
+			<nav class="menu">
+				<a href="index.html">Home</a>
+				<a href="login.html">Login</a>
+				<a href="ayuda.html">Ayuda</a>
+			</nav>
+		</div>
+	</header>
+	<div class="capa"></div>
+
+    <!--	--------------->
+<input type="checkbox" id="btn-menu">
+<div class="container-menu">
+	<div class="cont-menu">
+		<nav>
+			<a href="Hombre.html">Hombre</a>
+			<a href="mujer.html">Mujer</a>
+			<a href="accesorios.html">Accesorios</a>
+			<a href="ayuda.html">Ayuda</a>
+			<a href="formulariocarrito.html">Ingresa a tu carrito</a>
+
+
+
+		</nav>
+		<label for="btn-menu">✖️</label>
+	</div>
+</div>
+
+<main>
+    <div class="formulario">
+    <form>
+        <h4 class="titulo2">Accede a tu cuenta con tus credenciales</h4>
+        
+        <div class="input-container">
+        <h4 class="titulo">Ingresa tu correo </h4>
+        <input name="email" id="email" class="input" type="email" placeholder="Email" required data-tipo="email">
+		<span class="input-message-error">Este campo no es valido</span>
+        </div>
+        <div class="input-container">
+        <h4 class="titulo">Escribe tu contraseña </h4>
+        <input name="password" id="password" class="input" type="password" placeholder="Contraseña" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="Al menos 6 caracteres, máximo 12, debe contener una letra minúscula, una letra mayúscula, un número y no puede contener caracteres especiales." data-tipo="password">
+		<span class="input-message-error">Este campo no es valido</span>
+         </div>
+        <a class="olvido" href="">¿Has olvidado tu contraseña?</a>
+        <input type="submit" value="Ingresar" class="enviar">
+        
+
+
+
+
+    </form>
+    <a class="olvido"href="ayuda.html">¿No tienes cuenta? Ingresa aqui para registarte</a>
+
+
+    </div>
+
+
+
+
+
+    <footer class="pie-pagina">
+    <div class="grupo-1">
+        <div class="box">
+            <figure>
+                <a href="#">
+                    <img src="logopagina.png" alt="Logo de SLee Dw">
+                </a>
+            </figure>
+        </div>
+        <div class="box">
+            <h2>SOBRE NOSOTROS</h2>
+            <a href="segundaayuda.html"class="nuevaayuda">¡Inscribete a nuestra seccion de noticias para recibir las ultimas novedades!</a>
+        
+            
+        </div>
+        <div class="box">
+            <h2>SIGUENOS</h2>
+            <div class="red-social">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-youtube"></a>
+            </div>
+        </div>
+    </div>
+    <div class="grupo-2">
+        <small>&copy; 2023 <b>JK ROPA Y ACCESORIOS</b> - Todos los Derechos Reservados.</small>
+    </div>
+    </footer>
+</main>
+
+<script src="./java/formulario.js" type="module"></script>
+    
+</body>
+
+</html>
